@@ -1,0 +1,36 @@
+{
+    "code": 200,
+    "msg": "success",
+    "data":
+    {
+        "UserInfo":
+        {
+            "ShareImg": "",
+            "ImageInfoParts": 1,
+            "Email": "",
+            "SharePhone": "",
+            "Gender": 0,
+            "NickName": "大帅老猿",
+            "IsNew": 99,
+            "Avatar": "https://tstatic.ssl.jimingkeji.com.cn/haiqingimg/icona.png",
+            "Role": 0,
+            "ImageInfoModel": 1,
+            "ShareId": 10229,
+            "UserId": 11061856723040,
+            "FirstLogin": false,
+            "Integral": 750,
+            "LoginType": 0,
+            "Online": 1,
+            "IsShowShare": 0
+        },
+        "UnlockImageParts":
+        {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true
+        }
+    }
+}
