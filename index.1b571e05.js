@@ -25634,26 +25634,11 @@
                     B()
                 }
                 )),
-                localStorage.getItem("token") ? c.default.getUserInfo().then((function(e) {
+                c.default.getUserInfo().then((function(e) {
                     e.isLogin = !0,
                     L({
                         type: w.MERGE,
                         value: T({}, e)
-                    })
-                }
-                )) : c.default.tempLogin({
-                    code: A.uuid
-                }).then((function(e) {
-                    var t = e.data
-                      , n = t.UserInfo
-                      , r = t.UnlockImageParts;
-                    L({
-                        type: w.MERGE,
-                        value: T({}, {
-                            isLogin: !0,
-                            userInfo: n,
-                            unlockImageParts: r
-                        })
                     })
                 }
                 ))
@@ -27080,7 +27065,7 @@
             ,
             this.tempLogin = function(e) {
                 return new Promise((function(n, r) {
-                    o.default.post("?call=auth.guess_login", e).then((function(e) {
+                    o.default.get("auth.guess_login.json", e).then((function(e) {
                         var r = e.code
                           , o = e.data;
                         if (200 === r) {
